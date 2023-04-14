@@ -5,6 +5,7 @@ import axios from 'axios';
 import List from './component/List';
 import UserItem from './component/UserItem';
 import TodoItem from './component/TodoItem';
+import EventsExample from './component/EventsExample';
 
 const App = () => {
   const [users, setUsers] = useState<IUser[]>([])
@@ -35,6 +36,7 @@ const App = () => {
 
   return (
     <div>
+      <EventsExample />
       <Card variant={CardVariant.outlined} width='200px' height='200px'>
         <button>Кнопка</button>
         <div>dfsdfsdf</div>
