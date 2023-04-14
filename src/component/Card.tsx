@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren, useState } from "react";
+import React, { FC, PropsWithChildren } from "react";
 
 export enum CardVariant {
     outlined = 'outlined',
@@ -19,7 +19,7 @@ const Card: FC<PropsWithChildren<CardProps>> =
         variant,
         children
     }) => {
-        const [state, setState] = useState(0)
+        // const [state, setState] = useState(0)
         return (
             <div style={{
                 width, height, border: variant === CardVariant.outlined ? '1px solid black' : 'none',
